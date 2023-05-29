@@ -278,4 +278,4 @@ function vec:cross(other)
     return self.x * other.y - self.y * other.x
 end
 
-setmetatable(vec, { __call = function(_, ...) return vec.new(...) end })
+return setmetatable(vec, { __call = function(_, ...) return vec.new(...) end })
